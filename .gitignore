@@ -1,10 +1,13 @@
 .DS_Store
 node_modules
+yarn-error.log
+npm-debug.log
+
+# Generated application files
 public/dist/app
 public/dist/css
 public/index.html
-yarn-error.log
-npm-debug.log
+public/dist/rev-manifest.json
 
 # Editor directories and files
 .vscode
