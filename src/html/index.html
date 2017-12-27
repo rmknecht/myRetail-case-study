@@ -10,54 +10,75 @@
     <header>
     </header>
     
-    <main>
-      <section>
+    <main class="container">
+      
+      <section class="block-product-hero row">
         <h1>Ninja&trade; Professional Blender with Single Serve Blending Cups</h1>
 
-        <div>
-          <img src="http://via.placeholder.com/400x400">
-        </div>
-        <div>
-          <ul>
-            <li><img src="http://via.placeholder.com/60x60"></li>
-            <li><img src="http://via.placeholder.com/60x60"></li>
-            <li><img src="http://via.placeholder.com/60x60"></li>
-          </ul>
-        </div>
-      </section>
+        <div class="hero-carousel row">
 
-      <section>
-        <div>
-            <h4>$139.99 <small>online price</small></h4>
+          <div class="row">
+            <img src="http://via.placeholder.com/400x400" class="product-hero">
           </div>
 
-        <ul>
-          <li><img src="/assets/img/promotion-tag-red.svg" width="15"> spend $50, ship free</li>
-          <li><img src="/assets/img/promotion-tag-red.svg" width="15"> $25 gift card with purchase of a select Ninja Blender</li>
-        </ul>
-     
-        <div>
-          quantity: <button>+</button> <span>1<span> <button>-</button>
-        </div>
-        
-        <div>
-          <button>Pick up in store</button>
-          <button>Add to cart</button>
+            <div class="thumbnail-list">
+              <a href="#" class="hero-carousel-control back">
+                <img src="/assets/img/hero-left-arrow.svg" width="10">
+              </a>
+              <div class="thumbnail-list-container">
+                <div class="thumbnail"><img src="http://via.placeholder.com/60x60"></div>
+                <div class="thumbnail"><img src="http://via.placeholder.com/60x60"></div>
+                <div class="thumbnail"><img src="http://via.placeholder.com/60x60"></div>
+              </div>
+              <a href="#" class="hero-carousel-control forward">
+                <img src="/assets/img/hero-right-arrow.svg" width="10">
+              </a>
+            </div>
+
         </div>
 
-        <div>
-          <h2>Returns</h2>
+      </section>
+
+      <section class="block-product-summary row">
+
+        <div class="product-price row">
+            <h4>$139.99 <small>online price</small></h4>
+        </div>
+
+        <div class="product-promo row">
+          <ul>
+            <li>spend $50, ship free</li>
+            <li>$25 gift card with purchase of a select Ninja Blender</li>
+          </ul>
+        </div>
+     
+        <div class="product-quantity row">
+          <div class="product-quantity-control">
+            <span class="quantity-label">quantity:</span>
+            <button class="quantity-dec">–</button>
+            <span class="product-quantity-value">1</span>
+            <button class="quantity-inc">+</button>
+          </div>
+        </div>
+        
+        <div class="cart-actions row">
+          <button class="button btn-large store-pick-up">Pick up in store</button>
+          <button class="button btn-large add-to-cart">Add to cart</button>
+        </div>
+
+        <div class="row returns-cta">
+          <h4>Returns</h4>
           <p>This item must be returned within 30 days of the ship date. See return policy for details. Prices, promotions, styles and availability may vary by store and online.</p>
         </div>
 
-        <div>
-          <button>Add to registry</button>
-          <button>Add to list</button>
-          <button>Share</button>
+        <div class="row user-actions">
+          <button class="button btn-small">Add to registry</button>
+          <button class="button btn-small">Add to list</button>
+          <button class="button btn-small">Share</button>
         </div>
 
-        <div>
-          <h2>Product highlights</h2>
+        <div class="product-highlights row">
+          <h2>product highlights</h2>
           <ul>
             <li>Wattage Output: 1100 Watts</li>
             <li>Number of Speeds: 3</li>
@@ -73,56 +94,47 @@
         </div>
       </section>
 
-      <section>
-        <div>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-          Overall
+      <section class="block-product-reviews">
+        
+        <div class="row score-overall">
+          <div>
+            <img src="/assets/img/overall-rating.png">overall 
+            <a href="#" class="right">view all 14 reviews</a>
+          </div>
         </div>
 
-        <p>
-          <a href="">view all 14 reviews</a>
-        </p>
+        <div class="most-helpful-reviews row">
+          <div class="left">
+            <div class="heading">
+              <h4>PRO</h4>
+              <p class="subhead">most helpful 4-5 star review</p>
+            </div>
 
-        <div>
-
-          <div>
-            <h4>PRO</h4>
-            <p>most helpful 4-5 star review</p>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-            <h3>Fantastic Blender</h3>
-            <p>This blender works amazingly, and blends within seconds.  The single serve cups also work really well for smoothies or protein shakes!</p>
-            <cite>
-              <p><a href="">Eric</a> April 18, 2013</p>
-            </cite>
+            <article>
+              <img src="/assets/img/five-star.png">
+              <h3>Fantastic Blender</h3>
+              <p>This blender works amazingly, and blends within seconds.  The single serve cups also work really well for smoothies or protein shakes!</p>
+              <cite>
+                <p><a href="">Eric</a> April 18, 2013</p>
+              </cite>
+            </article>
           </div>
           
-          <div>
-            <h4>CON</h4>
-            <p>most helpful 1-2 star review</p>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-            <h3>Very unhappy</h3>
-            <p>Less than 2 months after purchase it completely stopped working. First it wouldn't detect the pitcher when trying to blend a significant amount, a couple weeks later it wouldn't detect the single serve cup.</p>
-            <cite>
-              <p><a href="">New York</a>  March 11, 2013</p>
-            </cite>
+          <div class="right">
+            <div class="heading">
+              <h4>CON</h4>
+              <p class="subhead">most helpful 1-2 star review</p>
+            </div>
+
+            <article>
+              <img src="/assets/img/one-star.png">
+              <h3>Very unhappy</h3>
+              <p>Less than 2 months after purchase it completely stopped working. First it wouldn't detect the pitcher when trying to blend a significant amount, a couple weeks later it wouldn't detect the single serve cup.</p>
+              <cite>
+                <p><a href="">New York</a>  March 11, 2013</p>
+              </cite>
+            </article>
+            
           </div>
         </div>
       </section>

@@ -1,0 +1,35 @@
+.block-product-hero {
+  h1 { 
+    margin: 20px 0 61px 0;
+    text-align: center;
+  }
+  
+  .product-hero {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.hero-carousel {
+
+  .thumbnail-list {
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center;
+
+    &-container { 
+      .thumbnail {
+        width: 60px;
+        float: left;
+        margin: 0 8px;
+      }
+    }
+  }
+
+  &-control {
+    float: left;
+    width: 60px;
+    text-align: center;
+    margin: 0 8px;
+  }
+}

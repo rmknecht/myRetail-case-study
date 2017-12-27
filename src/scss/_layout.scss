@@ -1,0 +1,61 @@
+/*
+
+	Layout
+
+*/
+.container {
+	&:after {
+	  clear: both;
+	  content: "";
+	  display: block;
+	}
+}
+
+.row {
+  *zoom: 1;
+  display: block;
+
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+.right { float: right; }
+.left { float: left; }
+
+main {
+	width: 500px;
+	margin: 0 auto;
+}
+
+.block-product-hero {
+  width: 100%;
+  
+  @media only screen and (min-width: 1000px) {
+    // width: 50%;
+    // float: left;
+  }
+}
+
+.block-product-summary {
+  width: 100%;
+
+  @media only screen and (min-width: 1000px) {
+    // width: 50%;
+    // float: right;
+  }
+}
+
+.block-product-reviews {
+  width: 100%;
+
+  @media only screen and (min-width: 1000px) {
+    // width: 50%;
+    // float: left;
+  }
+}

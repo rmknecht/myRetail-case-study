@@ -1,0 +1,176 @@
+.block-product-summary {
+
+  .product-price {
+    padding: 0 15px;
+    border-bottom: 1px solid $gray-light;
+    padding-bottom: 40px;
+
+    h4 { 
+      font-family: $font-family-plain;
+      font-weight: bold;
+      font-size: 1.875rem;
+      margin-bottom: 0;
+      
+      small { 
+        font-weight: normal;
+        font-size: 0.75rem;
+        color: $gray;
+      }
+    }
+  }
+  
+  .product-promo {
+    border-bottom: 1px solid $gray-light;
+
+    ul { 
+      list-style: none;
+      margin: 0;
+      padding: 0 16px 30px 16px;
+
+      li {
+        font-family: $font-family-plain;
+        color: $color-red;
+        font-size: 1.125rem;
+        marign: 15px; 
+        text-indent:-23px;
+        margin-left: 23px;
+        margin-bottom: 0.8125rem;
+
+        &:last-child{ margin-bottom: 0; }
+
+        &:before {
+          content: "";
+          display: inline-block;
+          background-image: url('/assets/img/promotion-tag-red.svg');
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 15px;
+          height: 25px;
+          margin-bottom: -10px;
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+
+  .product-quantity {
+    &-control {
+      display: inline-block;
+      width: auto;
+      padding: 5px 8px 5px 13px;
+      border: 1px solid $gray-light;
+      border-radius: 4px;
+      margin-left: 15px;
+      margin-bottom: 20px;
+
+      .quantity-label {
+        font-size: 0.875rem;
+        margin-right: 40px;
+      }
+
+      button { 
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background-color: $gray-light;
+        border-radius: 30px;
+        color: $white;
+        font-size: 30px;
+        font-family: "Helvetica Neue LT Std";
+        font-weight: 300;
+        line-height: 31px;
+        text-indent: -2px;
+        outline: none;
+
+        &.quantity-dec {
+          margin-right: 8px;
+        }
+
+        &.quantity-inc {
+          margin-left: 8px;
+        }
+      }
+
+      .product-quantity-value {
+        font-family: "Helvetica Neue LT Std";
+        font-weight: bold;
+        font-size: 1.125rem;
+      }
+    }
+  }
+
+  .cart-actions {
+    padding: 0 5px;
+    
+    .add-to-cart, 
+    .store-pick-up {
+      width: calc(50% - 15px);
+      margin: 0 10px;
+      float: left;
+      color: $white;
+    }
+
+    .store-pick-up {
+      background-color: #000;
+      margin-right: 5px;
+    }
+
+    .add-to-cart {
+      background-color: $color-red;
+      margin-left: 5px;
+    }
+  }
+
+  .returns-cta {
+    h4 {
+      display: inline-block;
+      float: left;
+      padding: 0 15px;
+      margin: 0 15px 0 0;
+      font-size: 1.25rem;
+      color: $gray;
+      text-transform: lowercase;
+      border-right: 1px solid $gray-light;
+    }
+    p {
+      padding-left: 20px;
+      font-family: 'Helvetica Neue LT Std';
+      font-size: 0.625rem;
+      color: $gray;
+    }
+  }
+
+  .user-actions {
+    display: flex;
+    padding: 0 15px;
+
+    .button {
+      flex: 1;
+    }
+
+    .button + .button {
+      margin-left: 10px;
+    }
+  }
+
+  .product-highlights {
+    padding: 0 15px;
+
+    h2 {
+      font-family: 'Helvetica Neue LT Std';
+      font-size: 2.1875rem;
+    }
+
+    ul {
+      padding-left: 14px;
+
+      li {
+        padding-left: 6px;
+        margin-bottom: 6px;
+        font-family: 'Helvetica Neue LT Std';
+        font-size: 0.875rem;
+        color: $gray;
+      }
+    }
+  }
+}

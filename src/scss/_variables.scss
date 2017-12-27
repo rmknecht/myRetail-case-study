@@ -5,12 +5,14 @@
 */
 
 /* Colors */
-$color-blue: #00aef0;
+$color-blue: #0066cc;
 $color-orange: #f26522;
+$color-red: #cc0000;
 
 $gray: #666666;
 $gray-dark: #333333;
-$gray-light: #d3d3d3;
+$gray-light: #cccccc;
+$gray-xlight: #f3f3f3;
 
 $white: #ffffff;
 
@@ -27,7 +29,7 @@ $color-error: #990000;
 $color-success: #2d6f01;
 
 /* Font stacks */
-$font-family-base: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+$font-family-base: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
 $font-family-headline: "Georgia", "Cambria", "Times New Roman", "Times", serif;
 $font-family-display: $font-family-headline;
 $font-family-plain: Arial, sans-serif;
