@@ -1,6 +1,6 @@
 <template>
   <section id="product-hero" class="block-product-hero row">
-      <h1>Ninja&trade; Professional Blender with Single Serve Blending Cups</h1>
+      <h1>{{ this.productData.title }}</h1>
 
       <div class="hero-carousel row">
 
@@ -27,11 +27,20 @@
 </template>
 
 <script>
+
+import { mapState } from 'vuex';
+
 export default {
   name: 'product-hero',
   data () {
     return {}
-  }
+  },
+
+  computed: {
+    ...mapState([
+      'productData', // map this.productData to store.state.productData
+    ])
+  },
 }
 </script>
 
