@@ -1,16 +1,26 @@
 <template>
   <div id="app">
-    <hello></hello>
+
+    <main class="container">
+    	<product-hero></product-hero>
+		<product-summary></product-summary>
+		<product-reviews></product-reviews>
+	</main>
+
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello.vue'
+import ProductHero from './components/ProductHero.vue'
+import ProductSummary from './components/ProductSummary.vue'
+import ProductReviews from './components/ProductReviews.vue'
 
 export default {
   name: 'app',
   components: {
-    Hello
+    ProductHero,
+    ProductSummary,
+    ProductReviews
   }
 }
 </script>
