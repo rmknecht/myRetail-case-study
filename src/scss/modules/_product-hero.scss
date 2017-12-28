@@ -4,33 +4,4 @@
     max-width: 400px;
     text-align: center;
   }
-  
-  .product-hero {
-    display: block;
-    margin: 0 auto;
-  }
-}
-
-.hero-carousel {
-
-  .thumbnail-list {
-    display: flex;
-    justify-content: center; /* align horizontal */
-    align-items: center;
-
-    &-container { 
-      .thumbnail {
-        width: 60px;
-        float: left;
-        margin: 0 8px;
-      }
-    }
-  }
-
-  &-control {
-    float: left;
-    width: 60px;
-    text-align: center;
-    margin: 0 8px;
-  }
 }

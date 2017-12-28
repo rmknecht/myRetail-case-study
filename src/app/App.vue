@@ -2,9 +2,7 @@
   <div id="app">
 
     <main class="container">
-      <product-hero>
-        
-      </product-hero>
+      <product-hero></product-hero>
   		<product-summary></product-summary>
   		<product-reviews></product-reviews>
   	</main>

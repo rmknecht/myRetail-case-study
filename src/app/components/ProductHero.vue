@@ -3,46 +3,43 @@
       <h1>{{ this.productData.title }}</h1>
 
       <div class="hero-carousel row">
-
-        <div class="row">
-          <img src="http://via.placeholder.com/400x400" class="product-hero">
-        </div>
-
-          <div class="thumbnail-list">
-            <a href="#" class="hero-carousel-control back">
-              <img src="/assets/img/hero-left-arrow.svg" width="10">
-            </a>
-            <div class="thumbnail-list-container">
-              <div class="thumbnail"><img src="http://via.placeholder.com/60x60"></div>
-              <div class="thumbnail"><img src="http://via.placeholder.com/60x60"></div>
-              <div class="thumbnail"><img src="http://via.placeholder.com/60x60"></div>
-            </div>
-            <a href="#" class="hero-carousel-control forward">
-              <img src="/assets/img/hero-right-arrow.svg" width="10">
-            </a>
-          </div>
-
+        <image-carousel :images="imageList"></image-carousel>
       </div>
+      
     </section>
 </template>
 
 <script>
 
 import { mapState } from 'vuex';
+import ImageCarousel from './ImageCarousel.vue';
 
 export default {
   name: 'product-hero',
   data () {
     return {}
   },
+  
+  components: {
+    ImageCarousel
+  },
 
   computed: {
     ...mapState([
       'productData', // map this.productData to store.state.productData
-    ])
+    ]),
+
+    // create a simple array from our json data.
+    imageList(){
+      // create an array
+      let alternates = this.productData.Images[0].AlternateImages.map(obj => obj.image)
+      
+      // return an array composed of the main and alternate images urls
+      return [ 
+        this.productData.Images[0].PrimaryImage[0].image, 
+        ...alternates 
+      ];
+    }
   },
 }
 </script>
-
-<style scoped>
-</style>
