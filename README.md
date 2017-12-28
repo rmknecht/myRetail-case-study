@@ -1,5 +1,4 @@
 # myRetail
-=========================
 
 A frontend case study for an online store "myRetail" utilizing [Vue.js](https://vuejs.org/). Initialized using the [vue-gulp-template](https://github.com/rmknecht/vue-gulp-template) for [vue-cli](https://github.com/vuejs/vue-cli).
 
