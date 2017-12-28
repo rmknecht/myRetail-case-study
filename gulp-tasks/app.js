@@ -1,7 +1,6 @@
 /*
   app.js
 */
-
 import { SRC_PATH, APP_BUILD_DIR } from './paths';
 
 import gulp from 'gulp';
