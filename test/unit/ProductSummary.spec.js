@@ -27,4 +27,18 @@ describe('ProductSummary Component', () => {
 
     expect(label.text()).toBe('1');
   });
+
+  it('Should display the price', () => {
+    expect(wrapper.contains('.product-price')).toBe(true);
+  });
+
+  it('Displays "pickup in store" and "add to cart" buttons', () => {
+    const showCart = wrapper.vm.showAddToCart;
+    const showInStore = wrapper.vm.showPickupInStore;
+
+    expect(showCart === showInStore).toBe(true);
+
+    expect(wrapper.contains('.store-pick-up')).toBe(true);
+    expect(wrapper.contains('.add-to-cart')).toBe(true);
+  });
 });

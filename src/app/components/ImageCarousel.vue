@@ -6,7 +6,7 @@
     </div>
 
     <div class="thumbnail-list-wrap">
-      <a href="#" class="thumbnail-list-control back" v-on:click.stop.prevent="deccurrentThumb()">
+      <a href="#" class="thumbnail-list-control back" v-on:click.stop.prevent="decCurrentThumb()">
         <img src="/assets/img/hero-left-arrow.svg" width="10">
       </a>
 
@@ -22,7 +22,7 @@
         </div>
       </div>
 
-      <a href="#" class="thumbnail-list-control forward" v-on:click.stop.prevent="inccurrentThumb()">
+      <a href="#" class="thumbnail-list-control forward" v-on:click.stop.prevent="incCurrentThumb()">
         <img src="/assets/img/hero-right-arrow.svg" width="10">
       </a>
     </div>
@@ -103,11 +103,11 @@ export default {
   },
 
   methods: {
-    inccurrentThumb() {
+    incCurrentThumb() {
       if(this.currentThumb < this.images.length) this.currentThumb++;
     },
 
-    deccurrentThumb() {
+    decCurrentThumb() {
       if(this.currentThumb > 3) this.currentThumb--;
     },
 

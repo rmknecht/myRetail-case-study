@@ -9,6 +9,8 @@ Asset and Directory Structure
 * **node_modules** (Node dependencies installed with NPM)
 * **public** (Public document root)
 	* **assets** (static assets)
+		* **fonts** (fonts files)
+		* **img** (static images)
 	* **dist** (Distributable, comipiled, code)
 			* **css** (CSS files compiled by Gulp)
 			* **app** (App-related Javascript compiled by Gulp)
@@ -16,12 +18,18 @@ Asset and Directory Structure
 	* **index.html** (Compiled index.html)
 * **src** (Source code and assets)
 	* **app** (App-related  Javascript)
+		* **components** (Single file Cue components)
+		* **json** (Static json data)
+		* **store** (Vuex store)
+			* **main.js** (Main entry point for the application js)
 	* **html** (Uncompiled html)
 	* **scss** (SCSS)
 		* **modules** (Site specific styling)
+* **test** (Functional Tests)
 * **.babelrc** (Babel config)
 * **.gitignore** (Untracked files)
 * **gulpfile.babel.js** (Main Gulp file)
+* **karma.conf.js** (Karma test runner config)
 * **package.json** (NPM packages manifest)
 * **README.md** (Project README file)
 
@@ -58,6 +66,16 @@ npm run dev
 # Build for production
 npm run build
 ```
+
+Testing
+---------------
+Example tests are located within the `test` directory
+
+Run tests with:
+
+	````
+	$ npm test
+	````
 
 Deployment
 ---------------

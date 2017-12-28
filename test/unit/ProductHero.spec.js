@@ -20,4 +20,8 @@ describe('ProductHero Component', () => {
     let output = wrapper.vm.imageList;
     expect(Array.isArray(output)).toBe(true);
   });
+
+  it('ProductHero should display an h1 title element', () => {
+    expect(wrapper.contains('h1')).toBe(true);
+  });
 });
