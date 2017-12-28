@@ -14,10 +14,14 @@ module.exports = function (config) {
     browserify: {
       debug: true,
       // needed to enable mocks
-      plugin: [require('proxyquireify').plugin]
+      plugin: [require('proxyquireify').plugin],
+      transform: [
+        'babelify',
+        'vueify'
+      ]
     },
     // if you want to continuously re-run tests on file-save,
     // replace the following line with `autoWatch: true`
     singleRun: true
-  })
-}
+  });
+};

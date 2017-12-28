@@ -11,12 +11,6 @@
     "build": "gulp dist",
     "test": "karma start karma.conf.js"
   },
-  "browserify": {
-    "transform": [
-      "babelify",
-      "vueify"
-    ]
-  },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "vue": "^2.0.1",
