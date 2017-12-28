@@ -8,7 +8,14 @@
   "scripts": {
     "gulp": "gulp",
     "dev": "gulp watch",
-    "build": "gulp dist"
+    "build": "gulp dist",
+    "test": "karma start karma.conf.js"
+  },
+  "browserify": {
+    "transform": [
+      "babelify",
+      "vueify"
+    ]
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
@@ -36,8 +43,17 @@
     "gulp-sourcemaps": "^2.6.1",
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.8",
+    "jasmine-core": "^2.8.0",
+    "karma": "^2.0.0",
+    "karma-browserify": "^5.1.2",
+    "karma-jasmine": "^1.1.1",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-spec-reporter": "0.0.32",
+    "phantomjs-prebuilt": "^2.1.16",
+    "proxyquireify": "^3.2.1",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
+    "vue-test-utils": "^1.0.0-beta.9",
     "vueify": "^9.0.0",
     "watchify": "^3.4.0"
   }
