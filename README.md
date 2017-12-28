@@ -7,6 +7,8 @@ A frontend case study for an online store "myRetail" utilizing [Vue.js](https://
 * Product information and images populated from JSON
 * "Add to Cart" and "Pickup In Store" button display logic
 * Product image carousel
+* Example functional tests
+* Develop and Build workflows with NPM and Gulp
 
 Asset and Directory Structure
 ---------------
@@ -82,11 +84,11 @@ Testing
 Example tests are located within the `test` directory.
 Run tests with:
 
-	````
-	$ npm test
-	````
+````
+$ npm test
+````
 
-Continuous Deployment
+Continuous Delivery
 ---------------
 
 ![Diagram](docs/continuous-delivery.png?raw=true "Diagram")
